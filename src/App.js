@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SignIn from './Components/SignIn/SignIn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <meta name="google-signin-client_id" content="680672895412-cm8973gstr7a7mjou82fi67hpp73hbnb.apps.googleusercontent.com"></meta>
+    <SignIn/>
     </div>
   );
 }
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+//ClientID: 680672895412-cm8973gstr7a7mjou82fi67hpp73hbnb.apps.googleusercontent.com
+//ClientSecret: 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
 
 export default App;
